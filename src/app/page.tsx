@@ -79,25 +79,13 @@ export default function Home() {
       <section className="w-full py-16 md:py-5">
         <div className="w-full container px-4 md:px-6 lg:px-32 flex flex-col items-start justify-center gap-6">
           <h1 className="text-xl font-bold sm:text-5xl text-indigo-600/90 tracking-tighter pl-3">
-            <span className="text-slate-800/90 mr-4">Where</span>
-            <span className="text-slate-800/90 mr-4">I've</span>
-            <span>Worked</span>
-            <span className="text-slate-800/90">.</span>
-          </h1>
-          <JobDisplay />
-        </div>
-      </section>
-      <section className="w-full py-16 md:py-5">
-        <div className="w-full container px-4 md:px-6 lg:px-32 flex flex-col items-start justify-center gap-6">
-          <h1 className="text-xl font-bold sm:text-5xl text-indigo-600/90 tracking-tighter pl-3">
             <span className="text-slate-800/90 mr-4">My</span>
             <span>Projects</span>
             <span className="text-slate-800/90">.</span>
           </h1>
           <p className="text-slate-700/90 md:text-lg pl-4">
             I&apos;ve worked on a variety of projects, from web applications to
-            building machine learning models.
-            <br /> Here are some of my favourites:
+            building machine learning models. Here are some of my favourites:
           </p>
           <div className="grid grid-cols-5 w-full gap-6">
             <div className="col-span-3 bg-indigo-100/50 flex items-center justify-center p-4 rounded-xl">
@@ -126,7 +114,7 @@ export default function Home() {
               <Link
                 href="#"
                 prefetch={false}
-                className="text-lg font-bold sm:text-2xl text-slate-800/90 tracking-tight hover:underline text-lefts"
+                className="text-lg font-bold sm:text-2xl text-slate-800/90 tracking-tight hover:underline text-left"
               >
                 Snippet Monster 👾
               </Link>
@@ -193,6 +181,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="w-full py-16 md:py-5">
+        <div className="w-full container px-4 md:px-6 lg:px-32 flex flex-col items-start justify-center gap-6">
+          <h1 className="text-xl font-bold sm:text-5xl text-indigo-600/90 tracking-tighter pl-3">
+            <span className="text-slate-800/90 mr-4">Where</span>
+            <span className="text-slate-800/90 mr-4">I've</span>
+            <span>Worked</span>
+            <span className="text-slate-800/90">.</span>
+          </h1>
+          <JobDisplay />
+        </div>
+      </section>
+      <footer className="w-full py-16 md:py-5"></footer>
     </main>
   );
 }
