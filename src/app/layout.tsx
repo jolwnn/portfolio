@@ -21,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>Jolynn's Portfolio</title>
       <body className={poppins.className}>{children}</body>
     </html>
   );

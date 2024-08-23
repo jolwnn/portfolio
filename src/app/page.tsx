@@ -1,9 +1,10 @@
+import Footer from "@/components/organisms/Footer";
 import JobDisplay from "@/components/organisms/JobDisplay";
 import Navbar from "@/components/organisms/Navbar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FlipWords } from "@/components/ui/flip-words";
-import { CircleChevronRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,11 +24,11 @@ export default function Home() {
                 </p>
                 <FlipWords
                   words={[
-                    "Software Engineer ⚛️",
-                    "Full-Stack Developer ⚛️",
-                    "CS Student @ NUS ⚛️",
-                    "Problem Solver ⚛️",
-                    "Coding Enthusiast ⚛️",
+                    "Software Engineer",
+                    "Full-Stack Developer",
+                    "CS Student @ NUS",
+                    "Problem Solver",
+                    "Coding Enthusiast",
                   ]}
                   className="text-xl font-bold sm:text-7xl text-indigo-600/90 tracking-tighter"
                 />
@@ -38,7 +39,11 @@ export default function Home() {
               </div>
               <div className="flex flex-col justify-start gap-2 md:flex-row md:p-3">
                 <Button className="hover:shadow-lg rounded-full">
-                  <Link href="#" prefetch={false} className="py-0 px-3 text-sm">
+                  <Link
+                    href="/projects"
+                    prefetch={false}
+                    className="py-0 px-3 text-sm"
+                  >
                     View My Work <span className="text-lg">👀</span>
                   </Link>
                 </Button>
@@ -54,7 +59,7 @@ export default function Home() {
                     Get My Resume <span className="text-lg">📬</span>
                   </Link>
                 </Button>
-                <Button
+                {/* <Button
                   variant="outline"
                   className="hover:shadow-lg rounded-full group"
                 >
@@ -70,7 +75,7 @@ export default function Home() {
                       ☎️
                     </span>
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -78,20 +83,30 @@ export default function Home() {
       </section>
       <section className="w-full py-16 md:py-5">
         <div className="w-full container px-4 md:px-6 lg:px-32 flex flex-col items-start justify-center gap-6">
-          <h1 className="text-xl font-bold sm:text-5xl text-indigo-600/90 tracking-tighter pl-3">
+          <h1 className="flex items-center text-xl font-bold sm:text-5xl text-indigo-600/90 tracking-tighter pl-3">
             <span className="text-slate-800/90 mr-4">My</span>
             <span>Projects</span>
             <span className="text-slate-800/90">.</span>
+            <Link href="/projects" prefetch={false}>
+              <ArrowUpRight className="ml-6 size-9 text-indigo-500/90 hover:text-slate-800/90" />
+            </Link>
           </h1>
           <p className="text-slate-700/90 md:text-lg pl-4">
             I&apos;ve worked on a variety of projects, from web applications to
             building machine learning models. Here are some of my favourites:
+            <Link
+              href="/projects"
+              prefetch={false}
+              className="text-indigo-600/90 italic underline ml-2 hover:text-indigo-800"
+            >
+              (View All)
+            </Link>
           </p>
-          <div className="grid grid-cols-5 w-full gap-6">
-            <div className="col-span-3 bg-indigo-100/50 flex items-center justify-center p-4 rounded-xl">
+          <div className="grid grid-cols-9 w-full gap-6">
+            <div className="col-span-5 bg-indigo-100/40 flex items-center justify-center p-6 rounded-xl">
               <Image
-                src="/preview.png"
-                alt="Project 1"
+                src="/snippetmonster.png"
+                alt="Snippet Monster"
                 width={520}
                 height={520}
                 className="object-contain hover:scale-105 shadow-lg"
@@ -99,10 +114,10 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="col-span-2 bg-indigo-100/50 flex items-center justify-center rounded-xl">
+            <div className="col-span-4 bg-indigo-100/40 flex items-center justify-center rounded-xl p-0">
               <Image
                 src="/sams.png"
-                alt="Project 1"
+                alt="Student Attendance Management System"
                 width={800}
                 height={800}
                 className="object-contain hover:scale-105"
@@ -110,19 +125,25 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="col-span-3 p-2 flex flex-col items-start justify-start gap-2">
+            <div className="col-span-5 p-2 flex flex-col items-start justify-start gap-2">
               <Link
-                href="#"
+                href="https://github.com/jolwnn/snippet-monster"
                 prefetch={false}
                 className="text-lg font-bold sm:text-2xl text-slate-800/90 tracking-tight hover:underline text-left"
               >
                 Snippet Monster 👾
               </Link>
-              <p className="text-gray-600/80 md:text-[15px]">
-                A full-featured end-to-end project for organizing code snippets.
-                Created with React and TypeScript, it provides user
-                authentication, search and filtering, and real-time
-                synchronisation, leveraging Supabase for backend support.
+              <p className="text-gray-600/80 md:text-[14px] text-justify mr-4">
+                An end-to-end project for organizing code snippets. Created with
+                React and Supabase for backend, it provides user authentication,
+                search and filtering, and real-time synchronisation.
+                <Link
+                  href="https://snippet-monster.vercel.app/"
+                  prefetch={false}
+                  className="ml-2 text-indigo-600/90 underline font-semibold hover:text-indigo-800"
+                >
+                  Try it out here!
+                </Link>
               </p>
               <div className="mt-4 flex flex-col items-start justify-start gap-2">
                 <span className="text-slate-800/90 text-sm font-semibold">
@@ -137,30 +158,17 @@ export default function Home() {
                   <Badge variant="secondary">Shadcn</Badge>
                 </span>
               </div>
-              <Button
-                variant="outline"
-                className="hover:shadow-lg hover:scale-95 rounded-full bg-transparent border-slate-800/90 border-2 mt-12"
-              >
-                <Link
-                  href="#"
-                  prefetch={false}
-                  className="py-1 px-3 flex items-center gap-1"
-                >
-                  <span className="text-slate-800/90">See All Projects</span>
-                  <CircleChevronRight className="text-lg text-slate-800/90" />
-                </Link>
-              </Button>
             </div>
-            <div className="col-span-2 p-2 flex flex-col items-start justify-start gap-2">
+            <div className="col-span-4 p-2 flex flex-col items-start justify-start gap-2">
               <Link
-                href="#"
+                href="https://github.com/jolwnn/Student-Attendance-Management-System-MERN"
                 prefetch={false}
                 className="text-lg font-bold sm:text-2xl text-slate-800/90 tracking-tight hover:underline text-left"
               >
                 Student Attendance
                 <br /> Management System 📝
               </Link>
-              <p className="text-gray-600/80 md:text-[15px]">
+              <p className="text-gray-600/80 md:text-[14px] text-justify mr-4">
                 A facial recognition-based attendance tracking web app, complete
                 with a student management system to perform CRUD operations.
               </p>
@@ -179,6 +187,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="flex w-full justify-center"></div>
         </div>
       </section>
       <section className="w-full py-16 md:py-5">
@@ -192,7 +201,7 @@ export default function Home() {
           <JobDisplay />
         </div>
       </section>
-      <footer className="w-full py-16 md:py-5"></footer>
+      <Footer />
     </main>
   );
 }

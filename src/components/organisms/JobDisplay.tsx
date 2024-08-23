@@ -70,16 +70,16 @@ function Vucar() {
             @ Vucar
           </Link>
         </span>
-        <span className="text-sm text-slate-800/80">
+        <span className="text-[14px] text-slate-800/80">
           May — August 2024 &nbsp;&nbsp;|&nbsp;&nbsp; Onsite in Ho Chi Minh City
         </span>
       </div>
-      <p className="text-gray-600/80 md:text-sm">
+      <p className="text-gray-600/80 md:text-[14px]">
         Vucar is a C2B AI-enabled used car marketplace. I interned at Vucar
         through the NUS Overseas Colleges Southeast Asia 3-month Program, an
         experiential learning program with a focus on entrepreneurship.
       </p>
-      <div className="text-gray-600/80 md:text-sm gap-2 grid grid-cols-12 w-full">
+      <div className="text-gray-600/80 md:text-[14px] gap-2 grid grid-cols-12 w-full">
         <Check className="text-indigo-600 size-5 col-span-1 mt-1" />
         <span className="col-span-11">
           Developed both frontend and backend for a report and form builder for
@@ -98,7 +98,7 @@ function Vucar() {
         </span>
       </div>
       <div className="flex flex-col items-start justify-start gap-2">
-        <span className="text-slate-800/90 text-sm font-semibold">
+        <span className="text-slate-800/90 text-[14px] font-semibold">
           Technologies Used 🚀:
         </span>
         <span className="flex gap-1 flex-wrap">
@@ -129,14 +129,14 @@ function Datature() {
             @ Datature
           </Link>
         </span>
-        <span className="text-sm text-slate-800/80">
+        <span className="text-[14px] text-slate-800/80">
           May — July 2023 &nbsp;&nbsp;|&nbsp;&nbsp; Onsite in Singapore
         </span>
       </div>
-      <p className="text-gray-600/80 md:text-sm">
+      <p className="text-gray-600/80 md:text-[14px]">
         Datature is an end-to-end no-code ml-ops platform.
       </p>
-      <div className="text-gray-600/80 md:text-sm gap-2 grid grid-cols-12 w-full">
+      <div className="text-gray-600/80 md:text-[14px] gap-2 grid grid-cols-12 w-full">
         <Check className="text-indigo-600 size-5 col-span-1 mt-1" />
         <span className="col-span-11">
           Created Python script to automate testing for API.
@@ -149,7 +149,7 @@ function Datature() {
         </span>
       </div>
       <div className="flex flex-col items-start justify-start gap-2">
-        <span className="text-slate-800/90 text-sm font-semibold">
+        <span className="text-slate-800/90 text-[14px] font-semibold">
           Technologies Used 🚀:
         </span>
         <span className="flex gap-1 flex-wrap">
@@ -177,15 +177,15 @@ function Dsta() {
             @ DSTA
           </Link>
         </span>
-        <span className="text-sm text-slate-800/80">
+        <span className="text-[14px] text-slate-800/80">
           Nov — Dec 2021 &nbsp;&nbsp;|&nbsp;&nbsp; Onsite in Singapore
         </span>
       </div>
-      <p className="text-gray-600/80 md:text-sm">
+      <p className="text-gray-600/80 md:text-[14px]">
         The Defence Science and Technology Agency (DSTA) is a statutory board
         under the Ministry of Defence of Singapore.
       </p>
-      <div className="text-gray-600/80 md:text-sm gap-2 grid grid-cols-12 w-full">
+      <div className="text-gray-600/80 md:text-[14px] gap-2 grid grid-cols-12 w-full">
         <Check className="text-indigo-600 size-5 col-span-1 mt-1" />
         <span className="col-span-11">
           Assessed 15+ commercial video analytics software by testing and
@@ -218,11 +218,11 @@ function Lccl() {
             @ LCCL Coding Academy
           </Link>
         </span>
-        <span className="text-sm text-slate-800/80">
+        <span className="text-[14px] text-slate-800/80">
           Dec 2020 &nbsp;&nbsp;|&nbsp;&nbsp; Onsite in Singapore
         </span>
       </div>
-      <p className="text-gray-600/80 md:text-sm">
+      <p className="text-gray-600/80 md:text-[14px]">
         Taught programming to 10+ children. Designed and facilitated lessons for
         Lego robotics camp. Wrote script to automate data entry after
         understanding needs from supervisor.
