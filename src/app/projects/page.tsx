@@ -1,5 +1,6 @@
 import Footer from "@/components/organisms/Footer";
 import Navbar from "@/components/organisms/Navbar";
+import NavbarSheet from "@/components/organisms/NavbarSheet";
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight, Github } from "lucide-react";
 import Link from "next/link";
@@ -55,22 +56,23 @@ const PROJECTS = [
 
 export default function Projects() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start bg-indigo-50/70">
-      <header className="flex w-full justify-center items-center py-4 px-6">
+    <main className="flex min-h-screen flex-col items-center justify-start px-4 sm:px-6 md:px-8">
+      <header className="flex w-full justify-start md:justify-center items-center py-4 px-4 sm:px-6 md:px-8">
         <Navbar />
+        <NavbarSheet />
       </header>
-      <section className="w-full py-16 md:py-5">
-        <div className="w-full container px-4 md:px-6 lg:px-32 flex flex-col items-start justify-center gap-6">
-          <h1 className="text-xl font-bold sm:text-5xl text-indigo-600/90 tracking-tighter pl-3">
-            <span className="text-slate-800/90 mr-4">My</span>
+      <section className="w-full py-8">
+        <div className="w-full px-4 md:px-6 lg:px-32 flex items-center justify-start">
+          <h1 className="text-2xl font-bold sm:text-3xl md:text-5xl text-indigo-600/90 tracking-tighter pl-1 md:pl-3">
+            <span className="text-slate-800/90 mr-1 sm:mr-2 md:mr-4">My</span>
             <span>Projects</span>
             <span className="text-slate-800/90">.</span>
           </h1>
         </div>
-        <div className="flex flex-col items-center justify-center p-10 w-full">
+        <div className="flex flex-col items-center justify-center gap-2 md:gap-0 p-4 md:p-10 w-full">
           {PROJECTS.map((project, index) => (
             <article
-              className="flex items-start justify-start w-[850px] gap-10 border-b py-4 px-10"
+              className="flex flex-col md:flex-row items-center justify-center md:justify-start w-full md:w-2/3 gap-4 md:gap-10 border-b py-4 md:px-10"
               key={index}
             >
               <img
@@ -78,15 +80,15 @@ export default function Projects() {
                 alt={project.name}
                 width={170}
                 height={90}
-                className="rounded-sm object-cover mt-4"
+                className="rounded-sm object-cover"
                 style={{ aspectRatio: "170/90", objectFit: "cover" }}
               />
-              <div className="space-y-2 col-span-3 w-full">
+              <div className="space-y-2 w-full">
                 <span className="flex items-center justify-between w-full">
                   <Link
                     href={project.preview ?? project.github}
                     prefetch={false}
-                    className="flex items-center font-semibold text-slate-800/90 group hover:underline"
+                    className="flex items-center font-semibold text-slate-800/90 group hover:underline text:sm md:text-md"
                   >
                     {project.name}
                     {project.preview && (
@@ -104,7 +106,7 @@ export default function Projects() {
                     </Badge>
                   ))}
                 </div>
-                <p className="text-gray-600/80 md:text-[13px] text-justify">
+                <p className="text-gray-600/80 text-xs sm:text-sm md:text-[13px] text-justify">
                   {project.description}
                 </p>
               </div>
