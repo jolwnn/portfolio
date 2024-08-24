@@ -189,7 +189,9 @@ export default function Home() {
             <span className="text-slate-800/90 mr-1 sm:mr-2 md:mr-4">
               Where
             </span>
-            <span className="text-slate-800/90 mr-1 sm:mr-2 md:mr-4">I've</span>
+            <span className="text-slate-800/90 mr-1 sm:mr-2 md:mr-4">
+              I&apos;ve
+            </span>
             <span>Worked</span>
             <span className="text-slate-800/90">.</span>
           </h1>

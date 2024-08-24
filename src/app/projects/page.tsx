@@ -3,6 +3,7 @@ import Navbar from "@/components/organisms/Navbar";
 import NavbarSheet from "@/components/organisms/NavbarSheet";
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight, Github } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const PROJECTS = [
@@ -75,7 +76,7 @@ export default function Projects() {
               className="flex flex-col md:flex-row items-center justify-center md:justify-start w-full md:w-2/3 gap-4 md:gap-10 border-b py-4 md:px-10"
               key={index}
             >
-              <img
+              <Image
                 src={project.image}
                 alt={project.name}
                 width={170}
