@@ -32,7 +32,7 @@ export default function NavbarSheet() {
           <nav className="flex flex-col items-start gap-2 py-4">
             <Link
               href="/"
-              className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-xl font-medium ${
+              className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-lg font-medium ${
                 pathname === "/" ? "text-indigo-700" : "text-slate-800/90"
               }`}
               prefetch={false}
@@ -41,7 +41,7 @@ export default function NavbarSheet() {
             </Link>
             <Link
               href="#"
-              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-xl font-medium ${
+              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-lg font-medium ${
                text-slate-800/90"
               prefetch={false}
             >
@@ -49,7 +49,7 @@ export default function NavbarSheet() {
             </Link>
             <Link
               href="/projects"
-              className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-xl font-medium ${
+              className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-lg font-medium ${
                 pathname === "/projects"
                   ? "text-indigo-700"
                   : "text-slate-800/90"
@@ -61,7 +61,7 @@ export default function NavbarSheet() {
           </nav>
           <div className="flex flex-col md:flex-row items-start gap-2 md:gap-4">
             <span
-              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-xl font-medium ${
+              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-lg font-medium ${
                text-slate-800/90"
             >
               Get in Touch:
