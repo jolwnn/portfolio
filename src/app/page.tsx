@@ -54,8 +54,10 @@ export default function Home() {
                   className="hover:shadow-lg rounded-full"
                 >
                   <Link
-                    href="#"
+                    href="/ZhuoLin_Resume.pdf"
                     prefetch={false}
+                    target="_blank" // Open in a new tab
+                    rel="noopener noreferrer" // Security measure
                     className="py-0 px-2 text-sm text-slate-800/90"
                   >
                     Get My Resume <span className="text-lg">📬</span>

@@ -64,7 +64,10 @@ function Vucar() {
       <div className="flex flex-col items-start justify-start gap-1">
         <span className="text-base md:text-xl flex flex-col md:flex-row items-start justify-start md:gap-1.5 font-semibold">
           <span className="text-slate-800">Software Engineer Intern</span>
-          <Link href="#" className="text-indigo-600 hover:underline">
+          <Link
+            href="https://vucar.vn/"
+            className="text-indigo-600 hover:underline"
+          >
             @ Vucar
           </Link>
         </span>
@@ -123,7 +126,10 @@ function Datature() {
           <span className="text-slate-800">
             Software Engineer and Quality Assurance Intern
           </span>
-          <Link href="#" className="text-indigo-600 hover:underline">
+          <Link
+            href="https://www.datature.io/"
+            className="text-indigo-600 hover:underline"
+          >
             @ Datature
           </Link>
         </span>
@@ -168,7 +174,7 @@ function Dsta() {
         <span className="text-base md:text-xl flex flex-col md:flex-row items-start justify-start md:gap-1.5 font-semibold">
           <span className="text-slate-800">Video Analytics Intern</span>
           <Link
-            href="#"
+            href="https://www.dsta.gov.sg/"
             prefetch={false}
             className="text-indigo-600 hover:underline"
           >
@@ -209,7 +215,7 @@ function Lccl() {
             Teaching Assistant and Admin Intern
           </span>
           <Link
-            href="#"
+            href="https://lcclcoding.com/"
             prefetch={false}
             className="text-indigo-600 hover:underline"
           >

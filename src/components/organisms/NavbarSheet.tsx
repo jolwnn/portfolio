@@ -29,10 +29,10 @@ export default function NavbarSheet() {
         className="flex flex-col items-start justify-start p-6 w-5/6"
       >
         <div className="flex flex-col items-start justify-between gap-4 h-full">
-          <nav className="flex flex-col items-start gap-2">
+          <nav className="flex flex-col items-start gap-2 py-4">
             <Link
               href="/"
-              className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm font-medium ${
+              className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-xl font-medium ${
                 pathname === "/" ? "text-indigo-700" : "text-slate-800/90"
               }`}
               prefetch={false}
@@ -41,15 +41,15 @@ export default function NavbarSheet() {
             </Link>
             <Link
               href="#"
-              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm font-medium ${
+              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-xl font-medium ${
                text-slate-800/90"
               prefetch={false}
             >
-              About
+              About (Coming Soon!)
             </Link>
             <Link
               href="/projects"
-              className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm font-medium ${
+              className={`flex w-full items-center gap-2 rounded-md px-3 py-2 text-xl font-medium ${
                 pathname === "/projects"
                   ? "text-indigo-700"
                   : "text-slate-800/90"
@@ -61,7 +61,7 @@ export default function NavbarSheet() {
           </nav>
           <div className="flex flex-col md:flex-row items-start gap-2 md:gap-4">
             <span
-              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-sm font-medium ${
+              className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-xl font-medium ${
                text-slate-800/90"
             >
               Get in Touch:
